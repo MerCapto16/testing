@@ -1,0 +1,107 @@
+extends base.pug
+block style    
+        style
+            include ../public/sellbuystyle.css
+            include ../public/style.css
+block navbar 
+      nav.navbar-custom
+                     ul.list-custom
+                        img#logo(src='logo.jpg' alt=':)')
+                        li.items
+                            a(href='/')
+                                i.fas.fa-utensils(aria-hidden='true')
+                                |  Order
+                        li.items.items-active
+                            a(href='/sellbuy')
+                                i.fas.fa-dollar-sign(aria-hidden='true')
+                                |   Sell/Buy
+                        li.items
+                            a(href='/lostfound')
+                                i.fas.fa-box-open(aria-hidden='true')
+                                |   Lost&amp;Found
+                        li.items
+                            a(href='/cart')
+                                i.fas.fa-shopping-cart(aria-hidden='true')
+                                |  Cart
+                        li.items
+                            a(href='/login')
+                                i.fas.fa-user-secret(aria-hidden='true')
+                                |  Log In
+block content 
+    .dummy
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus
+        | optio, inventore adipisci fugiat dolor ad asperiores, quas vero dolores
+        | fugit perferendis eveniet! Voluptate, animi eveniet distinctio ex vel
+        | eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        | Expedita animi fuga placeat, laborum id eveniet tenetur quibusdam dicta
+        | repellat maiores quaerat alias! Soluta autem adipisci commodi! Pariatur
+        | natus officia
+    h1.sb-forsale For Sale!
+    section.sb-container
+        h2.sb-header Newly Added
+        .sb-NewlyAdded
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+        // <h2 class="sb-header">Cycles</h2>
+        .sb-NewlyAdded
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+        // <h2 class="sb-header">Sports</h2>
+        .sb-NewlyAdded
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+            .col-2.sb-box
+                img(src='' alt='')
+                .sb-box-details
+                    p Price: 6000
+                    p contact:9090909009
+    h1.header-sell  Wanna sell something?

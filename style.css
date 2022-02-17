@@ -1,0 +1,614 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  width: 4vw;
+  border-radius: 10px;
+  margin: 5px 5px;
+  margin-left: -10px;
+}
+
+.navbar-custom {
+  /* top: 0; */
+  /* margin: 0px 0px 0px 0px; */
+  /* border: 2px solid black ; */
+  /* justify-content: space-between; */
+  /* display: flex; */
+  /* background-color: white; */
+  /* box-shadow: 0px 2px 10px 2px #73d249; */
+  /* box-shadow: 0px 2px 10px 2px black; */
+
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(25, 35, 26);
+  flex-direction: row;
+}
+
+.list-custom {
+  /* justify-content: space-around; */
+  /* align-self: ; */
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 25px;
+}
+
+.items a {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  /* font-weight: lighter; */
+}
+
+/* FOR ORDER TO GET HIGHLIGHTED */
+
+.items-active a {
+  color: rgb(252, 100, 113);
+}
+
+/* ORDER SECTION FROM HERE */
+
+.container-joinus {
+  /* margin: 50px ; */
+  /* justify-content: center;
+align-items: center; */
+
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* .joinus::before{
+content: "";
+position: absolute;
+background-color: #4177be;
+background: url('../static/landingPage1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom; 
+opacity: 1;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+
+
+} */
+
+.joinus {
+  /* border: 2px solid black; */
+  /* box-shadow: 0px 2px 10px 1; */
+  /* width: 100vw; */
+  /* height: 500px; */
+  /* width: 100vw; */
+
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  background-color: rgb(250, 50, 67);
+}
+
+.joinus p {
+  /* opacity: 30; */
+  /* border: 2px solid black; */
+  /* color: white; */
+
+  position: relative;
+  margin: 2px 2px;
+  padding: 5px 10px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+}
+
+.joinus h3 {
+  margin-top: 5px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+}
+
+/* BUTTON IN JOIN US  */
+
+.btn-joinus {
+  /* color: black; */
+  /* transition: 0.8s;
+overflow: hidden;
+position: relative; */
+  /* border: 2px solid yellow; */
+
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: 1px solid white;
+  background: none;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-joinus:hover {
+  color: rgb(55, 39, 114);
+}
+
+/* 
+.btn-joinus::before{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 0%;
+background-color: rgb(55, 39, 114);
+z-index: 2;
+top: 0;
+border-radius: 0 0 50% 50%;
+transition: 0.8s;
+color: white;
+} */
+
+/* .btn-joinus:hover::before{
+height: 180%;
+color: white;
+} */
+
+.btn-joinus a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SERVICES AT YOUR DOORSTEP */
+
+.services {
+  /* border: 2px solid black; */
+  /* width: 100vw; */
+  /* height: 500px; */
+  /* background-color: rgba(255, 255, 255, 0.767); */
+  /* color: white; */
+  /* background-color: rgba(0, 0, 0, 0.616); */
+
+  font-family: "Baloo Bhaijaan 2", cursive;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* .services::before{
+content: "";
+position: absolute;
+background-color: #4177be;
+background: url('../static/landingPage1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom; 
+opacity: 0.8;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+z-index: -1;
+
+} */
+
+#h-services {
+  text-align: left;
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgb(25, 35, 26);
+}
+
+.h3-services {
+  text-align: center;
+  /* color: white; */
+  color: black;
+}
+
+.services-list {
+  text-align: center;
+  list-style: none;
+  padding: 0px 10px;
+  /* color: white; */
+  color: black;
+}
+
+.services-list:hover {
+  color: white;
+}
+
+.box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  padding: 10px 50px;
+}
+
+.fullbox {
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.box {
+  /* border: 4px solid black; */
+  /* background-color: rgb(55, 39, 114); */
+  /* background-color: #f79e2b; */
+  /* background-color: white; */
+
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  width: 23vw;
+  height: 400px;
+  box-shadow: 5px 5px 10px 2px rgb(252, 100, 113);
+  transition: all 0.4s ease-out;
+}
+
+.box:hover {
+  background-color: rgb(91, 91, 173);
+}
+
+/* #box1{
+border: 2px solid red;
+padding: 0px 10px;
+
+}
+#box2{
+border: 2px solid red;
+padding: 0px 10px;
+
+}
+#box3{
+border: 2px solid red;
+padding: 0px 10px;
+
+}
+#box4{
+border: 2px solid red;
+padding: 0px 10px;
+
+} */
+
+/* canteen box styling */
+
+/* TOP PICKS */
+
+.picks {
+  /* width: 100vw; */
+
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-toppicks {
+  padding-top: 20px;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  text-align: left;
+  font-size: 30px;
+  margin-left: 20px;
+  color: rgb(25, 35, 26);
+}
+
+.h-box {
+  /* color: white; */
+  color: black;
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 15px;
+}
+
+.food {
+  padding: 20px 40px;
+  margin: 0px 10px;
+  border-radius: 30px;
+  width: 18vw;
+  height: 28vh;
+  background-color: rgb(247, 45, 62);
+  /* background-color: rgb(252, 100, 113); */
+  box-shadow: 2px 2px 5px 2px rgb(252, 100, 113);
+}
+
+.image-food {
+  width: 10vw;
+  height: 15vh;
+  border-radius: 20px;
+}
+
+.addbtn {
+  color: #f6d365;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.addbtn:hover {
+  color: white;
+  background: #f6d365;
+}
+
+.price {
+  /* color: white; */
+  color: black;
+  font-weight: 500;
+}
+
+/* EAT HUBS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.eathubs {
+  /* background-image: linear-gradient(
+120deg,
+rgb(142, 115, 248),
+rgb(55, 39, 114)
+);
+background-color: rgb(55, 39, 114); */
+  /* width: 100vw; */
+
+  margin-top: 60px;
+  height: 900px;
+  box-shadow: -5px 0px 10px 6px rgb(252, 100, 113);
+}
+
+.eatplaces {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.h-eathubs {
+  font-family: "Baloo Bhaijaan 2", cursive;
+  font-size: 60px;
+}
+
+.h2-eathubs {
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+/* SHOP ITEMS MENU */
+
+.shop-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    120deg,
+    rgb(252, 100, 113),
+    rgb(209, 21, 37)
+  );
+  margin-bottom: 5px;
+}
+
+.shop-item-title {
+  /* text-align: center; */
+  vertical-align: center;
+  margin-left: 10px;
+  /* margin-bottom: 15px; */
+  /* width: 100%; */
+  /* text-align: center; */
+  font-weight: bold;
+  font-size: 0.7em;
+  color: white;
+  margin-bottom: 2px;
+}
+
+.shop-item-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.shop-item-price {
+  /* margin-right: 100px; */
+  color: white;
+  font-size: 0.7em;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #2d9cdb;
+}
+
+/* YOUR PICKS / CART */
+
+.cart {
+  /* height: 450px; */
+  margin-top: 50px;
+  border: 2px solid black;
+  width: 35vw;
+  background-image: linear-gradient(
+    120deg,
+    rgb(252, 100, 113),
+    rgb(209, 21, 37)
+  );
+  color: black;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.cart-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-input {
+  overflow-y: scroll;
+  height: 20vh;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1em;
+  color: #333;
+}
+
+.cart-column {
+  /* border-bottom: 1px solid black; */
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  padding-bottom: 1px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 100%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: white;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: white;
+  margin-left: 0.5em;
+  font-size: 1.2em;
+}
+
+.btn-danger {
+  color: white;
+  background-color: #eb5757;
+  border: none;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  background-color: #cc4c4c;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56ccf2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.67em 0.67em;
+  cursor: pointer;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: white;
+  font-size: 1.1em;
+}
+
+.cart-input {
+  /* padding: 5px; */
+  /* background: white; */
+
+  font-size: 20px;
+  border: none;
+}
+
+.add-to-cart {
+  padding: 10px 10px;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  background-image: linear-gradient(
+    120deg,
+    rgb(167, 65, 141),
+    rgb(76, 183, 233)
+  );
+  display: block;
+  margin: 5px auto 5px auto;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*CAROUSEL STYLE*/
+/* .carousel-inner {
+height: 220px;
+}
+
+.carousel-control-prev {
+height: 220px;
+width: 120px;
+}
+.carousel-control-next {
+height: 220px;
+width: 120px;
+}
+
+.slide-1 {
+margin: 55px;
+text-align: center;
+}
+
+.slide-2 {
+text-align: center;
+}
+.slide-3 {
+text-align: center;
+} */

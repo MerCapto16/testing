@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+.sb-forsale {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 60px;
+  background-color: yellow;
+}
+.sb-container {
+  margin-top: 10px;
+  /* background-color: rgb(250, 50, 67); */
+}
+.sb-box {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 270px;
+  height: 300px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px 1px black;
+}
+
+.sb-box img {
+  margin-top: 5px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.sb-box-details {
+  list-style: none;
+}
+
+.sb-NewlyAdded {
+  display: flex;
+  justify-content: space-around;
+}
+.sb-cycles {
+  display: flex;
+  justify-content: space-around;
+}
+.sb-sports {
+  display: flex;
+  justify-content: space-around;
+}
+.sb-header {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.header-sell {
+  margin-top: 10px;
+  margin-left: 10px;
+  /* text-align: center; */
+  font-size: 60px;
+  /* background-color: yellow; */
+}

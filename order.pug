@@ -1,0 +1,199 @@
+extends base.pug
+block navbar 
+      nav.navbar-custom
+                     ul.list-custom
+                        img#logo(src='logo.jpg' alt=':)')
+                        li.items.items-active
+                            a(href='/')
+                                i.fas.fa-utensils(aria-hidden='true')
+                                |  Order
+                        li.items
+                            a(href='/sellbuy')
+                                i.fas.fa-dollar-sign(aria-hidden='true')
+                                |   Sell/Buy
+                        li.items
+                            a(href='/lostfound')
+                                i.fas.fa-box-open(aria-hidden='true')
+                                |   Lost&amp;Found
+                        li.items
+                            a(href='/cart')
+                                i.fas.fa-shopping-cart(aria-hidden='true')
+                                |  Cart
+                        li.items
+                            a(href='/login')
+                                i.fas.fa-user-secret(aria-hidden='true')
+                                |  Log In
+block content
+    .dummy
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ducimus
+        | optio, inventore adipisci fugiat dolor ad asperiores, quas vero dolores
+        | fugit perferendis eveniet! Voluptate, animi eveniet distinctio ex vel
+        | eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        | Expedita animi fuga placeat, laborum id eveniet tenetur quibusdam dicta
+        | repellat maiores quaerat alias! Soluta autem adipisci commodi! Pariatur
+        | natus officia veniam. Lorem ipsum dolor, sit amet consectetur adipisicing
+        | elit. Maiores, similique.
+    section.order
+        .joinus
+            .container-joinus
+                h3 Hurry Up!
+                p
+                    | Have a lot of free time on your hands? Run out of pocket money? :(
+                    br
+                    | App developer | Manage Wesbite | Ride a cycle | Walk |
+                    br
+                    button.btn-joinus
+                        a(href='/') Know More 
+        section.services
+            h1#h-services At your Doorstep
+            .fullbox
+                #box1.box
+                    img(src='eating.jpg' alt='')
+                    h3.h3-services Food
+                    ul.services-list
+                        li Only at 5rs
+                        li Under 20 minutes*
+                        li No charge for late delivery
+                        li 5pm to 11:59pm
+                #box2.box
+                    img(src='delivery_pic2.jpg' alt='')
+                    h3.h3-services Groceries
+                    ul.services-list
+                        li Only at 20rs
+                        li Under 1 hour
+                        li No charge for late delivery
+                        li 5pm to 11:59pm
+                #box3.box
+                    img(src='cake.png' alt='')
+                    h3.h3-services Main Gate
+                    ul.services-list
+                        li Only at 20rs till 9:30pm
+                        li 30rs after 9:30pm
+                        li Under 30 minutes
+                        li No charge for late delivery
+                #box4.box
+                    img(src='duck.webp' alt='')
+                    h3.h3-services VendiMan
+                    ul.services-list
+                        li Only 1/10th of order price
+                        li +5rs if Acad Block Vendiman
+                        li No charges for item not available
+        h1.h-toppicks Top Picks
+        .picks
+            #food1.food
+                img.image-food(src='egg_rice.webp')
+                h2.h-box Egg Fried Rice
+                span.price Price: 32&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')
+            #food2.food
+                img.image-food(src='chicken_manchu.webp')
+                h2.h-box Chicken Frankie
+                span.price Price: 50&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')
+            #food3.food
+                img.image-food(src='chicken_chilli.webp')
+                h2.h-box Maggi
+                span.price Price: 50&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')
+            #food4.food
+                img.image-food(src='egg_rice.webp')
+                h2.h-box Corn Sandwich
+                span.price Price: 50&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')
+            #food5.food
+                img.image-food(src='chicken_manchu.webp')
+                h2.h-box Paneer Frankie
+                span.price Price: 40&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')
+            #food6.food
+                img.image-food(src='chicken_chilli.webp')
+                h2.h-box Chicken Noodles
+                span.price Price: 51&#x20B9;
+                button.addbtn
+                    i.fas.fa-cart-plus(aria-hidden='true')  
+        section.eathubs
+            section.cart
+                section.cart-form
+                    header Canteeen Kitchen
+                    .cart-input
+                        .shop-item
+                            span.shop-item-title Mutton Biriyani
+                            .shop-item-details
+                                span.shop-item-price 200Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Chicken-65
+                            .shop-item-details
+                                span.shop-item-price 60Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Chicken chilli
+                            .shop-item-details
+                                span.shop-item-price 60Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Veg Fried Rice
+                            .shop-item-details
+                                span.shop-item-price 28Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Egg Fried Rice
+                            .shop-item-details
+                                span.shop-item-price 32Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Double egg Fried Rice
+                            .shop-item-details
+                                span.shop-item-price 35Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Chicken egg Fried Rice
+                            .shop-item-details
+                                span.shop-item-price  51Rs 
+                                button.btn.btn-primary.shop-item-button
+                                    |   Add Item
+                        .shop-item
+                            span.shop-item-title Veg Fried Noodles
+                            .shop-item-details
+                                span.shop-item-price 28Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Egg Fried Noodles
+                            .shop-item-details
+                                span.shop-item-price 32Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Double egg Fried Noodles
+                            .shop-item-details
+                                span.shop-item-price 40Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                        .shop-item
+                            span.shop-item-title Chicken Egg Fried Noodles
+                            .shop-item-details
+                                span.shop-item-price 51Rs
+                                button.btn.btn-primary.shop-item-button
+                                    | Add Item
+                header Your Picks
+                .cart-container
+                .cart-total
+                    strong.cart-total-title Total
+                    span.cart-total-price 0Rs
+                    button.addbtn.eathubbtn
+                        i.fas.fa-cart-plus(aria-hidden='true')
+block scripts 
+        script
+            include ../js/index.js

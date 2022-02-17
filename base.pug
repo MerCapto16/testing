@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        title   IIT-Hurry
+        block links  
+                meta(charset='UTF-8')
+                meta(http-equiv='X-UA-Compatible' content='IE=edge')
+                meta(name='viewport' content='width=device-width, initial-scale=1.0')
+                title IIT-Hurry
+                
+                link(rel='apple-touch-icon' sizes='180x180' href='../static/favicon_io\apple-touch-icon.png')
+                link(rel='icon' type='image/png' sizes='32x32' href='../static/favicon_io\favicon-32x32.png')
+                link(rel='icon' type='image/png' sizes='16x16' href='../static/favicon_io\favicon-16x16.png')
+                link(rel='manifest' href='/site.webmanifest')
+                script(src='https://kit.fontawesome.com/b99e675b6e.js')
+                link(rel='preconnect' href='https://fonts.googleapis.com')
+                link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+                link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap' rel='stylesheet')
+                link(href='https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@650&display=swap' rel='stylesheet')
+                link(href='https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap' rel='stylesheet')  
+        block style
+            style 
+                include ../public/style.css
+
+    body
+        block navbar 
+                nav.navbar-custom
+                    ul.list-custom
+                        img#logo(src='logo.jpg' alt=':)')
+                        li.items.items-order
+                            a(href='/')
+                                i.fas.fa-utensils(aria-hidden='true')
+                                |  Order
+                        li.items
+                            a(href='/sellbuy')
+                                i.fas.fa-dollar-sign(aria-hidden='true')
+                                |   Sell/Buy
+                        li.items
+                            a(href='/lostfound')
+                                i.fas.fa-box-open(aria-hidden='true')
+                                |   Lost&amp;Found
+                        li.items
+                            a(href='/cart')
+                                i.fas.fa-shopping-cart(aria-hidden='true')
+                                |  Cart
+                        li.items
+                            a(href='/login')
+                                i.fas.fa-user-secret(aria-hidden='true')
+                                |  Log In
+        block content 
+        block scripts
+        
+
+
